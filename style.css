@@ -1,0 +1,89 @@
+
+body {
+  width: 1000px;
+  margin: auto;
+}
+
+body, input, button {
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px;
+}
+
+body > div {
+  display: inline-block;
+  margin: 20px;
+  vertical-align: top;
+}
+
+/************
+ * Progress *
+ ************/
+
+.progress-setter > div {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.progress-setter > div.todo {
+  background-color: white;
+}
+
+.progress-setter > div.done {
+  background-color: grey;
+}
+
+/*********
+ * Topic *
+ *********/
+
+.topic .sorter li div.selected {
+  background-color: lightgrey;
+}
+
+.topic .sorter > li > div {
+  padding: 10px;
+  border-radius: 15px;
+}
+
+/********
+ * Task *
+ ********/
+
+.task .sorter > li > div {
+  padding: 5px;
+}
+
+.task .sorter > li > div > .getter {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.task-topic {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 15px;
+}
+.task .sorter > li > div > .progress-setter {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.task-editor {
+  margin: 20px;
+}
+
+.task-editor > label {
+  display: block;
+}
+
+.task-editor > label > span {
+  display: inline-block;
+  width: 50px;
+}
